@@ -140,11 +140,16 @@ and open the template in the editor.
         <div class="row">
             <div class=" col-sm-4">
                 <ul style=" list-style-type: none">
-                    <li><b>4Feb2019:  </b><a data-toggle="tab" href="#Te1">Invitation for Quotations 
-                                    for supply of Goods</a></li>
+                    <li><b>23March2019:  </b><a data-toggle="tab" href="#" onclick="document.getElementById('ten1').style.display='block';
+                            document.getElementById('ten2').style.display='none';
+                        document.getElementById('ten3').style.display='none';
+                    document.getElementById('ten4').style.display='none'">Quotations are invited for Environmental Lab under Civil 
+                        Department, College of Engineering Kidangoor.</a></li>
                             <hr>
-                            <li><b>4Feb2019:  </b><a data-toggle="tab" href="#Te2">Invitation for Quotations 
-                                    for supply of Goods</a></li>
+                            <li><b>4Feb2019:  </b><a data-toggle="tab" href="#" onclick="document.getElementById('ten1').style.display='none';
+                            document.getElementById('ten2').style.display='block';
+                        document.getElementById('ten3').style.display='none';
+                    document.getElementById('ten4').style.display='none'">INVITATION FOR TENDERS_ Supply and Installation of Display Boards</a></li>
                             <hr>
                             <li><b>4Feb2019:  </b><a data-toggle="tab" href="#Te3">Invitation for Quotations 
                                     for supply of Goods</a></li>
@@ -155,7 +160,14 @@ and open the template in the editor.
                 
             </div>
             <div class=" col-sm-8"> 
-                <div class="tab-pane fade in active" id="Te1" style=" position: absolute;
+                <div id="ten1" style=" display: block">
+                    <object width=" 100%" height="300"  data="Quotations_Environmental lab.pdf"></object>
+                </div>
+                <!----------------------------------------------------->
+                <div id="ten2" style=" display: none">
+                    <object width=" 100%" height="300"  data="Tender.pdf"></object>
+                </div>
+                <!--<div class="tab-pane fade in active" id="Te1" style=" position: absolute;
                     border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
                     <object width=" 100%" height="300"  data="Fee_Structure.pdf"></object>
                 </div>
@@ -172,7 +184,7 @@ and open the template in the editor.
                 <div class="tab-pane fade" id="Te4" style=" position: absolute;
                     border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
                     <object width=" 100%" height="300" data="Tender3.pdf"></object>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
