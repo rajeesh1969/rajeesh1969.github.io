@@ -143,40 +143,23 @@ and open the template in the editor.
             <div class=" col-sm-2">
                 <h3 style=" color: aqua; text-align: center; margin-top: 0; margin-bottom: 0 ">NSS</h3>
                 <button type="button" style=" width: 100%" class="btn btn-info" 
-                        onclick="document.getElementById('nss1').style.display='block';
-                            document.getElementById('nss2').style.display='none';
-                        document.getElementById('nss3').style.display='none';
-                    document.getElementById('nss4').style.display='none' ;
-                    document.getElementById('nss5').style.display='none'">Gallery</button>
+                        onclick="displayFunction('nss1')">Gallery</button>
                 <br>
                 <button type="button" style=" width: 100%" class="btn btn-info" 
-                        onclick="document.getElementById('nss1').style.display='none';
-                            document.getElementById('nss2').style.display='block';
-                        document.getElementById('nss3').style.display='none';
-                    document.getElementById('nss4').style.display='none';
-                document.getElementById('nss5').style.display='none'">About NSS</button>
+                        onclick="displayFunction('nss2')">About NSS</button>
                 <br>
                 <button type="button" style=" width: 100%" class="btn btn-info" 
-                        onclick="document.getElementById('nss1').style.display='none';
-                            document.getElementById('nss2').style.display='none';
-                        document.getElementById('nss3').style.display='block';
-                    document.getElementById('nss4').style.display='none';
-                document.getElementById('nss5').style.display='none'">NSS@CEK</button>
+                        onclick="displayFunction('nss3')">NSS@CEK</button>
                 <br>
                 <button type="button" style=" width: 100%" class="btn btn-info" 
-                        onclick="document.getElementById('nss1').style.display='none';
-                            document.getElementById('nss2').style.display='none';
-                        document.getElementById('nss3').style.display='none';
-                    document.getElementById('nss4').style.display='block';
-                document.getElementById('nss5').style.display='none'">Program Officers</button>
+                        onclick="displayFunction('nss4')">Program Officers</button>
             
             <br>
                 <button type="button" style=" width: 100%" class="btn btn-info" 
-                        onclick="document.getElementById('nss1').style.display='none';
-                            document.getElementById('nss2').style.display='none';
-                        document.getElementById('nss3').style.display='none';
-                    document.getElementById('nss4').style.display='none';
-                document.getElementById('nss5').style.display='block'">Activities</button>
+                        onclick="displayFunction('nss5')">Activities</button>
+            <!--<br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick= "displayFunction('nss6')">Extra</button>-->
         </div>
             
             <!----------------------------------------------------------------->
@@ -285,6 +268,10 @@ reconstruction activities at our adopted village KUREEKATIL COLONY also.</p>
                     <object width="100%" height=" 500px"  data="NSS/Activities2019.pdf"></object>
                 </div>
                 <!-------------------------------------------------------------->
+                <!--<div id="nss6" style="display:none">
+                    <h1>Test</h1>
+                </div>-->
+                <!-------------------------------------------------------------->
             </div>
         </div>
     </div>
@@ -303,21 +290,17 @@ reconstruction activities at our adopted village KUREEKATIL COLONY also.</p>
     </script>
     <!------------------------------------------------------------------------------->
 <script>
+ function displayFunction(x){
+     document.getElementById('nss1').style.display='none';
+     document.getElementById('nss2').style.display='none';
+     document.getElementById('nss3').style.display='none';
+     document.getElementById('nss4').style.display='none';
+     document.getElementById('nss5').style.display='none';
+     
+     document.getElementById(x).style.display='block';
+ }
+</script>
 
-</script>
-<script>
-function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-}
-</script>
-
-<script>
-function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("mystyle");
-}
-</script>
 <!------------------------------------------------------------------------------->
 </body>
 </html>
