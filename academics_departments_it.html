@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to College of Engineering Kidangoor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="my_script.js"></script>  
+        <link rel="stylesheet" type="text/css" href="my_style.css">
+        <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 20px;
+    z-index: 9999 !important;
+  }
+  
+  a:hover{
+      color: deeppink; 
+      text-decoration: none;
+  }
+  
+
+
+</style>  
+    </head>
+    
+<body>
+
+<!------------------------- Top navigation bar ----------------------------->
+<div class="container" id="top_nav">
+           <div w3-include-html="top_nav_bar.html"></div>  
+    </div>
+    <!------------------------- ----------------- ----------------------------->
+    <!------------------------- College Title     ----------------------------->
+    <div class="container">
+        <div w3-include-html="title_bar.html"></div>  
+    </div>
+    
+    <!--------------------------Main Menu Bar---------------------------------------->
+    <div class="container" id="main_menu_s">
+        <ul class="nav nav-tabs" data-spy="affix" data-offset-top="205" style=" background-color: aliceblue">
+      <!--------------------------------------------------------------------->
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> About Us <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="aboutus_cek.html" style="color: blueviolet">CEK</a></li>
+        <li><a href="aboutus_cape.html" style="color: blueviolet">CAPE</a></li>
+        <!--<li><a href="#">Submenu 1-3</a></li> -->
+        <!---------------------------------------->
+        <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#" style="color: blueviolet">Administration <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="aboutus_admin_bog.html" style="color: blueviolet">BOG</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_principal.html" style="color: blueviolet">Principal</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_hods.html" style="color: blueviolet">HODs</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_committees.html" style="color: blueviolet">Committees</a></li>
+          
+        </ul>
+      </li>
+        <!---------------------------------------->
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+      <!--<li class="active"><a href="#" style="color: greenyellow">About Us</a></li>-->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Academics <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="academics_coursesoffered.html" style="color: blueviolet">Courses Offered</a></li>
+        <li><a href="academics_departments.html" style=" color: blueviolet">Departments</a></li>
+        <li><a href="academics_calender.html" style=" color: blueviolet">Academic Calender</a></li>                        
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Research <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="research_projects" style=" color: blueviolet">Projects</a></li>
+        <li><a href="research_publications" style=" color: blueviolet">Publications</a></li>
+                             
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Facilities <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="facilities_library.html" style=" color: blueviolet">Library</a></li>
+        <li><a href="facilities_hostels.html" style=" color: blueviolet">Hostels</a></li>
+        <li><a href="facilities_transport.html" style=" color: blueviolet">Transport</a></li>
+        <li><a href="facilities_others.html" style=" color: blueviolet">Others</a></li>
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!--------------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Peoples <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="peoples_CE.html" style="color: blueviolet">Department of Civil Engineering</a></li>
+        <li><a href="peoples_CSE.html" style="color: blueviolet">Department of Computer Science and Engineering</a></li>
+        <li><a href="peoples_EEE.html" style="color: blueviolet">Department of Electrical and Electronics Engineering</a></li>
+        <li><a href="peoples_ECE.html" style="color: blueviolet">Department of Electronics and Communication Engineering</a></li>
+        <li><a href="peoples_EIE.html" style="color: blueviolet">Department of Electronics and Instrumentation Engineering</a></li>
+        <li><a href="peoples_IT.html" style="color: blueviolet">Department of Information Technology</a></li>
+        <li><a href="peoples_ASH.html" style="color: blueviolet">Department of Applied Science and Humanities</a></li>
+        <li><a href="peoples_A.html" style="color: blueviolet">Administration</a></li>
+      </ul>
+    </li>
+    <!--------------------------------------------------------->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Students Corner <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="students_clubs.html" style="color: blueviolet">Clubs</a></li>
+        <li><a href="students_union.html" style="color: blueviolet">Students Union</a></li>
+        <li><a href="students_sports.html" style="color: blueviolet">Sports</a></li>                        
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <li><a href="placements.html" style="color: blueviolet">Placements</a></li>
+    <li><a href="iqac.html" style="color: blueviolet">IQAC</a></li>
+    <li><a href="gallery.html" style="color: blueviolet">Gallery</a></li>
+    <li><a href="nss.html" style="color: blueviolet">NSS</a></li>
+    <li><a href="teqip.html" style="color: blueviolet">TEQIP</a></li>
+    
+  </ul>         
+    </div>
+    <!------------------------------------------------------------------------>
+    <br>
+    <!------------------------------------------------------------------------>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <!----------------------------------------------------------->
+             <!-- <div class="btn-group-vertical" style=" background-color: blueviolet">
+                    <button type="button" class="btn btn-primary">Civil Engineering</button>
+                    <button type="button" class="btn btn-primary">Computer Science and Engineering</button>
+                    <button type="button" class="btn btn-primary">Electronics and Communication Engineering</button>
+              </div> -->
+             <ul class="nav nav-pills nav-stacked">
+                    <li><a href="academics_departments.html" style=" border-style: solid; border-width: 1pt">Civil Engineering</a></li>
+                    <li><a href="academics_departments_cse.html" style=" border-style: solid; border-width: 1pt">Computer Science and Engineering</a></li>
+                    <li><a href="academics_departments_eee.html" style=" border-style: solid; border-width: 1pt">Electrical and Electronics Engineering</a></li>
+                    <li><a href="academics_departments_ece.html" style=" border-style: solid; border-width: 1pt">Electronics and Communication Engineering</a></li>
+                    <li><a href="academics_departments_eie.html" style=" border-style: solid; border-width: 1pt">Electronics and Instrumentation Engineering</a></li>
+                    <li><a href="academics_departments_it.html" style=" border-style: solid; border-width: 1pt">Information Technology</a></li>
+                </ul>
+                <!----------------------------------------------------------->
+                <br>
+                <!----------------Lab Details------------------------------------>
+                <div style=" border-style: solid; border-width: 1pt">
+                    <h4 style=" text-align: center; text-decoration: underline">Lab Facilities</h4>
+                    <h5 style=" font-weight: bold">P.C. Hardware Lab</h5>
+                    <p style=" text-indent: 25px">This Lab is well equipped with latest computer systems of different configuration for the purpose of training students. The lab is equipped with more than 12 new branded and 10 old computers. Computers are based on Intel and AMD processors like 8086, 80386,80486, PIII, Celeron and Duron. Motherboards of different types for testing purpose and advanced peripherals like different types of Printers, Scanners, Modems, CDD etc are also available in the Hardware laboratory.</p>
+                    <h5 style=" font-weight: bold">Multimedia Lab</h5>
+                    <p style=" text-indent: 25px"> This lab is well equipped for the study of various multimedia software. This lab is intended for Information technology students in order to expose them to Multimedia Projects like Animation,3D Objects creation etc.</p>
+                    <h5 style=" font-weight: bold">System Programming and Advanced Micro Processor Lab</h5>
+                    <p style=" text-indent: 25px">  This lab is established for the study of low-level programming, which includes assembly level programming and machine level programming. This lab is intended for Information Technology and Computer Science Students.</p>
+                    <h5 style=" font-weight: bold">Network and OS  Lab</h5>
+                    <p style=" text-indent: 25px"> Objective of this lab is to improve the knowledge in the field of Advanced Networking technologies.This Lab is well equipped for the study of various communication protocols like TCP/IPand the familiarization of Unix system calls like stat, fork and creation of semaphores etc.</p>
+                    <h5 style=" font-weight: bold">Project Lab</h5>
+                    <p style=" text-indent: 25px">  Students can do any online project by using advanced software.This may be web based or stand alone software.This Lab will be help them for handful training in fields of project development cycles</p>
+                    
+                </div>
+            <!--------------------------------------------------------------->
+            </div>
+            <!--------------------------------------------------------------->
+            
+            <div class="col-sm-8" style=" padding-left: 0; border-style: solid; border-width: 1pt; border-radius: 5pt">
+                
+                    <h3 style=" margin-left: 0px; margin-top: 0px"> Department of Information Technology </h3>
+                    <p style="text-indent: 25px"> The Department was established in 2000, and now has become a full-fledged department with advanced laboratory facilities to train the students to meet the current needs of the fast changing industrial scenario.</p>
+                    <p>Head of the Department: <b>Prof.Shyma A</b></p>
+                    <p><b>Accreditation Status:Applied Accreditation in Process.SAR Filed</b></p>
+                    <h4>Vision</h4>
+                    <p style=" text-indent: 25px">  </p>
+                    <h4>Mission</h4>
+                    <p style=" text-indent: 25px">  </p>
+                    <h4>Program Educational Objectives</h4>
+                    <p style=" text-indent: 25px"></p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <h4>Program Outcomes</h4>
+                    <p style=" text-indent: 25px">Upon graduating from the B. Tech. program of Civil Engineering
+                        Department of College of Engineering Kidangoor, students should possess:</p>
+                    <ol>
+                        <li>An ability to apply knowledge of mathematics, science, and engineering.</li>
+                        <li>An ability to design and conduct experiments, as well as to analyze and interpret data.</li>
+                        <li>An ability to design a system, component, or process to
+                            meet desired needs within realistic constraints such as 
+                            economic, environmental, social, political, ethical, 
+                            health and safety, manufacturability and sustainability.</li>
+                        <li>An ability to function on multi-disciplinary teams.</li>
+                        <li>An ability to identify, formulate, and solve engineering problems.</li>
+                        <li>An understanding of professional and ethical responsibility as well as the
+                            importance of professional licensure.</li>
+                        <li>An ability to communicate effectively.</li>
+                        <li>The broad education necessary to understand the impact 
+                            of engineering solutions in a global and societal context.</li>
+                        <li>A recognition of the need for, and an ability to engage in life-long learning.</li>
+                        <li>A knowledge of contemporary issues.</li>
+                        <li>An ability to use the techniques, skill, and modern 
+                            engineering tools necessary for engineering practice.</li>
+                        <li>An ability to explain basic concepts in management, business,
+                            public policy, and leadership.</li>
+                        <li>An ability to evaluate concepts and ideas from alternative perspectives.</li>
+                    </ol>
+                    <h4>Program Specific Outcome</h4>
+                    <p style=" text-indent: 25px">The students graduating from the
+                        program should possess</p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                
+                    
+                
+            </div>
+  </div>
+  
+</div>
+    <!------------------------------------------------------------------------->
+    <br>
+   
+    <!-------------------Footer------------------------------------------------>
+    <div class="container" id="top_nav">
+        <div w3-include-html="footer.html"></div> 
+    </div>
+
+<!------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------->
+    <script>
+        includeHTML();
+    </script>
+    <!------------------------------------------------------------------------------->
+<script>
+
+</script>
+<!------------------------------------------------------------------------------->
+</body>
+</html>
+
+

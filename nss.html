@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to College of Engineering Kidangoor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="my_script.js"></script>  
+        <link rel="stylesheet" type="text/css" href="my_style.css">
+        <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 20px;
+    z-index: 9999 !important;
+  }
+  
+  a:hover{
+      color: deeppink; 
+      text-decoration: none;
+  }
+  
+
+
+
+</style>  
+    </head>
+    
+<body>
+
+<!------------------------- Top navigation bar ----------------------------->
+<div class="container" id="top_nav">
+           <div w3-include-html="top_nav_bar.html"></div>  
+    </div>
+    <!------------------------- ----------------- ----------------------------->
+    <!------------------------- College Title     ----------------------------->
+    <div class="container">
+        <div w3-include-html="title_bar.html"></div>  
+    </div>
+    
+    <!--------------------------Main Menu Bar---------------------------------------->
+    <div class="container" id="main_menu_s">
+        <ul class="nav nav-tabs" data-spy="affix" data-offset-top="205" style=" background-color: aliceblue">
+      <!--------------------------------------------------------------------->
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> About Us <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="aboutus_cek.html" style="color: blueviolet">CEK</a></li>
+        <li><a href="aboutus_cape.html" style="color: blueviolet">CAPE</a></li>
+        <!--<li><a href="#">Submenu 1-3</a></li> -->
+        <!---------------------------------------->
+        <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#" style="color: blueviolet">Administration <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="aboutus_admin_bog.html" style="color: blueviolet">BOG</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_principal.html" style="color: blueviolet">Principal</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_hods.html" style="color: blueviolet">HODs</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_committees.html" style="color: blueviolet">Committees</a></li>
+          
+        </ul>
+      </li>
+        <!---------------------------------------->
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+      <!--<li class="active"><a href="#" style="color: greenyellow">About Us</a></li>-->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Academics <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="academics_coursesoffered.html" style="color: blueviolet">Courses Offered</a></li>
+        <li><a href="academics_departments.html" style=" color: blueviolet">Departments</a></li>
+        <li><a href="academics_calender.html" style=" color: blueviolet">Academic Calender</a></li>                        
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Research <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="research_projects.html" style=" color: blueviolet">Projects</a></li>
+        <li><a href="research_publications.html" style=" color: blueviolet">Publications</a></li>
+                             
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Facilities <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="facilities_library.html" style=" color: blueviolet">Library</a></li>
+        <li><a href="facilities_hostels.html" style=" color: blueviolet">Hostels</a></li>
+        <li><a href="facilities_transport.html" style=" color: blueviolet">Transport</a></li>
+        <li><a href="facilities_others.html" style=" color: blueviolet">Others</a></li>
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!--------------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Peoples <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="peoples_CE.html" style="color: blueviolet">Department of Civil Engineering</a></li>
+        <li><a href="peoples_CSE.html" style="color: blueviolet">Department of Computer Science and Engineering</a></li>
+        <li><a href="peoples_EEE.html" style="color: blueviolet">Department of Electrical and Electronics Engineering</a></li>
+        <li><a href="peoples_ECE.html" style="color: blueviolet">Department of Electronics and Communication Engineering</a></li>
+        <li><a href="peoples_EIE.html" style="color: blueviolet">Department of Electronics and Instrumentation Engineering</a></li>
+        <li><a href="peoples_IT.html" style="color: blueviolet">Department of Information Technology</a></li>
+        <li><a href="peoples_ASH.html" style="color: blueviolet">Department of Applied Science and Humanities</a></li>
+        <li><a href="peoples_A.html" style="color: blueviolet">Administration</a></li>
+      </ul>
+    </li>
+    <!--------------------------------------------------------->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Students Corner <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="students_clubs.html" style="color: blueviolet">Clubs</a></li>
+        <li><a href="students_union.html" style="color: blueviolet">Students Union</a></li>
+        <li><a href="students_sports.html" style="color: blueviolet">Sports</a></li>                        
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <li><a href="placements.html" style="color: blueviolet">Placements</a></li>
+    <li><a href="iqac.html" style="color: blueviolet">IQAC</a></li>
+    <li><a href="gallery.html" style="color: blueviolet">Gallery</a></li>
+    <li><a href="nss.html" style="color: blueviolet">NSS</a></li>
+    <li><a href="teqip.html" style="color: blueviolet">TEQIP</a></li>
+    
+  </ul>         
+    </div>
+    <!------------------------------------------------------------------------>
+    <br>
+    <!------------------------------------------------------------------------>
+    <div class="container" style=" padding-top: 0">
+        
+        <div class="row">
+            <div class=" col-sm-2">
+                <h3 style=" color: aqua; text-align: center; margin-top: 0; margin-bottom: 0 ">NSS</h3>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss1')">Gallery</button>
+                <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss2')">About NSS</button>
+                <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss3')">NSS@CEK</button>
+                <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss4')">Program Officers</button>
+            
+            <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss5')">Activities</button>
+            <!--<br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick= "displayFunction('nss6')">Extra</button>-->
+        </div>
+            
+            <!----------------------------------------------------------------->
+               
+        
+            <div class=" col-sm-10" style=" border-left-style: double; border-left-color: black"> 
+                <!---------------------------------------------------------------->
+                <div id="nss1" style="display:block">
+                    <!--------------------------------------------->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <img src="NSS/nss1.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="NSS/nss2.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="NSS/nss3.jpg" alt="">
+    </div>
+      <div class="item active">
+      <img src="NSS/nss4.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="NSS/nss5.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="NSS/nss6.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                    <!--------------------------------------------->
+                    
+                </div>
+                <!------------------------------------------------------------->
+                <div id="nss2" style="display:none">
+                    <p style=" text-indent: 10pt; text-justify: auto">National Service Scheme (NSS) was constituted in 1969,
+                        the year which marks Mahatma Gandhi’s
+100th Birthday, as a student youth service programme. It is an educational experiment in community
+service which aims at involving under-graduate students on a voluntary basis in various activities of
+social service and national development, students to understand and appreciate the problems of the
+community, awaken social consciousness and inculcate in them a sense of dignity of labour. The
+Motto of NSS “Not Me But You”, reflects the essence of democratic living and upholds the need for
+self-less service. NSS helps the students develop appreciation to other person’s point of view and also
+show consideration to other living beings. The philosophy of the NSS is well reflected in this motto,
+which underlines on the belief that the welfare of an individual is ultimately dependent on the welfare
+of the society on the whole and therefore, the NSS volunteers shall strive for the well-being of the
+society.</p>
+                </div>
+                <!------------------------------------------------------------->
+                <div id="nss3" style="display:none">
+                    <p style=" text-indent: 10pt; text-justify: auto">College of Engineering Kidangoor Unit 607 is 
+                        a self financing unit under NSS technical cell and
+APJAKTU Technical Cell. The NSS Unit of our college places an active role in shaping our students
+human and responsible citizens. Now NSS Activities are included in the academic curriculum so that
+students are exposed to more opportunities for social services. The NSS unit of College of
+Engineering Kidangoor is a very socially active body which upholds the NSS motto of “NOT ME
+BUT YOU” and enables the students to remain connected with the society and updated about their
+problems. The main aim of the unit is PERSONALITY DEVELOPMENT THROUGH SOCIAL
+SERVICE and to nurture a group of socially committed professionals. Several social welfare
+programmes such as rural camps, annual special camps, health camps, blood donations camps, various
+awareness programmes for students and the public, marathons, etc. are organised by the NSS unit of
+CEK regularly.Mainly NSS unit of College of Engineering Kidangoor focuses on the rural
+reconstruction activities at our adopted village KUREEKATIL COLONY also.</p>
+                    
+                </div>
+                <!------------------------------------------------------------->
+                <div id="nss4" style="display:none">
+                    <h4><b>Prof.Dinu A G</b></h4>
+                    <p>Assistant Professor<br>Department of EIE</p>
+                    <hr>
+                    <h4><b>Prof.Shandry K K</b></h4>
+                    <p>Assistant Professor<br>Department of CSE</p>
+                    <hr>
+                    <h4 style=" text-decoration: underline">Volunteer secretaries</h4>
+                    <p>Amal V R,<br>Princy P</p>
+                </div>
+                <!-------------------------------------------------------------->
+                <div id="nss5" style="display:none">
+                    <object width="100%" height=" 500px"  data="NSS/Activities2019.pdf"></object>
+                </div>
+                <!-------------------------------------------------------------->
+                <!--<div id="nss6" style="display:none">
+                    <h1>Test</h1>
+                </div>-->
+                <!-------------------------------------------------------------->
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------->
+    <br>
+   
+    <!-------------------Footer------------------------------------------------>
+    <div class="container" id="top_nav">
+        <div w3-include-html="footer.html"></div> 
+    </div>
+
+<!------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------->
+    <script>
+        includeHTML();
+    </script>
+    <!------------------------------------------------------------------------------->
+<script>
+ function displayFunction(x){
+     document.getElementById('nss1').style.display='none';
+     document.getElementById('nss2').style.display='none';
+     document.getElementById('nss3').style.display='none';
+     document.getElementById('nss4').style.display='none';
+     document.getElementById('nss5').style.display='none';
+     
+     document.getElementById(x).style.display='block';
+ }
+</script>
+
+<!------------------------------------------------------------------------------->
+</body>
+</html>
+
+
+

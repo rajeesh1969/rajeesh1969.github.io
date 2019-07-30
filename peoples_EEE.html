@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to College of Engineering Kidangoor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="my_script.js"></script>  
+        <link rel="stylesheet" type="text/css" href="my_style.css">
+        <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 20px;
+    z-index: 9999 !important;
+  }
+  
+  a:hover{
+      color: deeppink; 
+      text-decoration: none;
+  }
+  
+
+
+</style>  
+    </head>
+    
+<body>
+
+<!------------------------- Top navigation bar ----------------------------->
+<div class="container" id="top_nav">
+           <div w3-include-html="top_nav_bar.html"></div>  
+    </div>
+    <!------------------------- ----------------- ----------------------------->
+    <!------------------------- College Title     ----------------------------->
+    <div class="container">
+        <div w3-include-html="title_bar.html"></div>  
+    </div>
+    
+    <!--------------------------Main Menu Bar---------------------------------------->
+    <div class="container" id="main_menu_s">
+        <ul class="nav nav-tabs" data-spy="affix" data-offset-top="205" style=" background-color: aliceblue">
+      <!--------------------------------------------------------------------->
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> About Us <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="aboutus_cek.html" style="color: blueviolet">CEK</a></li>
+        <li><a href="aboutus_cape.html" style="color: blueviolet">CAPE</a></li>
+        <!--<li><a href="#">Submenu 1-3</a></li> -->
+        <!---------------------------------------->
+        <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#" style="color: blueviolet">Administration <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="aboutus_admin_bog.html" style="color: blueviolet">BOG</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_principal.html" style="color: blueviolet">Principal</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_hods.html" style="color: blueviolet">HODs</a></li>
+          <li><a tabindex="-1" href="aboutus_admin_committees.html" style="color: blueviolet">Committees</a></li>
+          
+        </ul>
+      </li>
+        <!---------------------------------------->
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+      <!--<li class="active"><a href="#" style="color: greenyellow">About Us</a></li>-->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Academics <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="academics_coursesoffered.html" style="color: blueviolet">Courses Offered</a></li>
+        <li><a href="academics_departments.html" style=" color: blueviolet">Departments</a></li>
+        <li><a href="academics_calender.html" style=" color: blueviolet">Academic Calender</a></li>                        
+      </ul>
+    </li>
+     <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Research <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="research_projects" style=" color: blueviolet">Projects</a></li>
+        <li><a href="research_publications" style=" color: blueviolet">Publications</a></li>
+                             
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: blueviolet"> Facilities <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="facilities_library.html" style=" color: blueviolet">Library</a></li>
+        <li><a href="facilities_hostels.html" style=" color: blueviolet">Hostels</a></li>
+        <li><a href="facilities_transport.html" style=" color: blueviolet">Transport</a></li>
+        <li><a href="facilities_others.html" style=" color: blueviolet">Others</a></li>
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <!--------------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Peoples <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="peoples_CE.html" style="color: blueviolet">Department of Civil Engineering</a></li>
+        <li><a href="peoples_CSE.html" style="color: blueviolet">Department of Computer Science and Engineering</a></li>
+        <li><a href="peoples_EEE.html" style="color: blueviolet">Department of Electrical and Electronics Engineering</a></li>
+        <li><a href="peoples_ECE.html" style="color: blueviolet">Department of Electronics and Communication Engineering</a></li>
+        <li><a href="peoples_EIE.html" style="color: blueviolet">Department of Electronics and Instrumentation Engineering</a></li>
+        <li><a href="peoples_IT.html" style="color: blueviolet">Department of Information Technology</a></li>
+        <li><a href="peoples_ASH.html" style="color: blueviolet">Department of Applied Science and Humanities</a></li>
+        <li><a href="peoples_A.html" style="color: blueviolet">Administration</a></li>
+      </ul>
+    </li>
+    <!--------------------------------------------------------->
+    <!-------------------------------------------------->
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: blueviolet"> Students Corner <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="students_clubs.html" style="color: blueviolet">Clubs</a></li>
+        <li><a href="students_union.html" style="color: blueviolet">Students Union</a></li>
+        <li><a href="students_sports.html" style="color: blueviolet">Sports</a></li>                        
+      </ul>
+    </li>
+    <!------------------------------------------------------>
+    <li><a href="placements.html" style="color: blueviolet">Placements</a></li>
+    <li><a href="iqac.html" style="color: blueviolet">IQAC</a></li>
+    <li><a href="gallery.html" style="color: blueviolet">Gallery</a></li>
+    <li><a href="nss.html" style="color: blueviolet">NSS</a></li>
+    <li><a href="teqip.html" style="color: blueviolet">TEQIP</a></li>
+    
+  </ul>         
+    </div>
+    <!------------------------------------------------------------------------>
+    <br>
+    <!------------------------------------------------------------------------>
+    <div class="container">
+        <!-------------------------------------------------------------------->
+        
+        <!-------------------------------------------------------------------->
+        <div class="row">
+            <div class="col-sm-4">
+            <!---------------------------------------------------------->
+            <!------Faculty 1--------->
+            <div class="row">
+            <div class="col-sm-6" style=" text-align: center" >                       
+                <a data-toggle="tab" href="#profile_indhu">
+                    <img src="EEE/Indhu.jpg" class=" img-rounded">
+                </a>
+                    <h5>Dr. Indhu P. Nair</h5>
+                    <h6>Associate Professor & Head</h6>                
+            </div>
+            <!----------------------------------------->  
+            <!------Faculty 2--------->
+            <div class="col-sm-6" style=" text-align: center">
+                <a data-toggle="tab" href="#profile_sreekala">
+                <img src="EEE/girl.jpg" class="img-rounded">
+                </a>
+                <h5>Sreekala V</h5>
+                <h6>Assistant Professor</h6>
+            </div>
+            </div>
+            <!-------------------------------------------------------------->
+           <!------Faculty 3--------->
+            <div class="row">
+            <div class="col-sm-6" style=" text-align: center" >                       
+                <a  data-toggle="tab"  href="#profile_salini">
+                    <img src="EEE/girl.jpg" class=" img-rounded">
+                </a>
+                    <h5>Salini M Venugopal</h5>
+                    <h6>Assistant Professor</h6>                
+            </div>
+            <!-----------------------------------------> 
+            <!------Faculty 4--------->
+            <div class="col-sm-6" style=" text-align: center">
+                <a  data-toggle="tab"  href="#profile_bini">
+                <img src="EEE/binimol.jpg" class="img-rounded">
+                </a>
+                <h5>Binimol V.K</h5>
+                <h6>Assistant Professor</h6>
+            </div>
+            </div>
+            <!-------------------------------------------------------------->
+            <!------Faculty 5--------->
+            <div class="row">
+            <div class="col-sm-6" style=" text-align: center" >                       
+                <a  data-toggle="tab"  href="#profile_anith">
+                    <img src="EEE/girl.jpg" class=" img-rounded">
+                </a>
+                    <h5>Anith Krishnan</h5>
+                    <h6>Assistant Professor</h6>                
+            </div>
+            <!-----------------------------------------> 
+            <!------Faculty 6--------->
+            <div class="col-sm-6" style=" text-align: center">
+                <a  data-toggle="tab"  href="#profile_soumya">
+                <img src="EEE/girl.jpg" class="img-rounded">
+                </a>
+                <h5>Soumya K. G</h5>
+                <h6>Assistant Professor</h6>
+            </div>
+            </div>
+            <!-------------------------------------------------------------->
+            <!-------------------------------------------------------------->
+            <!------Faculty 7--------->
+            <div class="row">
+            <div class="col-sm-6" style=" text-align: center" >                       
+                <a  data-toggle="tab"  href="#profile_sonima">
+                    <img src="EEE/sonima.jpg" class=" img-rounded">
+                </a>
+                    <h5>Sonima M P</h5>
+                    <h6>Assistant Professor</h6>                
+            </div>
+            <!----------------------------------------->  
+            <!------Faculty 8--------->
+            <div class="col-sm-6" style=" text-align: center">
+                <a  data-toggle="tab"  href="#profile_jasmi">
+                <img src="EEE/Jasmi.jpg" class="img-rounded">
+                </a>
+                <h5>Jasmi M S</h5>
+                <h6>Assistant Professor</h6>
+            </div>
+            </div>
+            <!-------------------------------------------------------------->
+            <!------Faculty 9--------->
+            <div class="row">
+            <div class="col-sm-6" style=" text-align: center" >                       
+                <a  data-toggle="tab"  href="#profile_reshmi">
+                    <img src="EEE/reshmi.jpg" class=" img-rounded">
+                </a>
+                    <h5>Reshmi k.Raj</h5>
+                    <h6>Assistant Professor</h6>                
+            </div>
+            <!-----------------------------------------> 
+            <!------Faculty 10--------->
+            <div class="col-sm-6" style=" text-align: center">
+                <a  data-toggle="tab"  href="#profile_raji">
+                <img src="EEE/girl.jpg" class="img-rounded">
+                </a>
+                <h5>Raji Reghunathan</h5>
+                <h6>Assistant Professor (Adhoc)</h6>
+            </div>
+            </div>            
+            <!-------------------------------------------------------------->
+            </div>
+            <!------------------------------------------------------------->
+            <div class="col-sm-8">                
+                <!------Faculty 1--------->
+                <div class="tab-pane fade in active" id="profile_indhu" style=" position: absolute;
+                     border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Dr.Indhu P. Nair</h3>
+                    <p style=" margin-bottom: 0">Associate Professor & Head</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 06/07/2012</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    indhupnair@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>- </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: years</p>
+                    <p style=" margin-bottom: 0">Industry: year</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                    
+                </div>
+<!------------------------------------------------------------------------->  
+                <!------Faculty 2--------->
+                <div class="tab-pane fade" id="profile_sreekala" style=" position: absolute;
+                     border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Sreekala V</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2010</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    sreekalav@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>C-</td>
+                                <td>- </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching:  years</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                    
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 3--------->
+                <div class="tab-pane fade" id="profile_salini" style=" position: absolute;
+                     border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Salini M Venugopal</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2013</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    salinim@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +918281978472</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: years</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                    
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 4--------->
+                <div class="tab-pane fade" id="profile_bini" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Binimol V.K</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electronics and Communication Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2010</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    binimol@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: years</p>
+                    <p style=" margin-bottom: 0">Industry: year</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                    
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 5--------->
+                <div class="tab-pane fade" id="profile_anith" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Anith Krishnan</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2010</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    anithkrishnan@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching:  years</p>
+                    <p style=" margin-bottom: 0">Industry:  year</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                    
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 6--------->
+                <div class="tab-pane fade" id="profile_soumya" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Soumya K. G</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2010</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    soumyakg@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>T.K.M College of Engg,Kollam</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>- </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: 7.5 years</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 7--------->
+                <div class="tab-pane fade" id="profile_sonima" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Sonima M P</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor(Adhoc)</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 03/09/2012</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">    sonimamp@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91 </span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: years</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 8--------->
+                <div class="tab-pane fade" id="profile_jasmi" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Jasmi M S</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 04/02/2014</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">   jasmims@ce-kgr.org </span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>- </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: year</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                </div>
+<!------------------------------------------------------------------------->
+                <!------Faculty 9--------->
+                <div class="tab-pane fade" id="profile_reshmi" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Reshmi k.Raj</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 01/07/2013</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">   reshmiraj96@gmail.com,resmikraj@ce-kgr.org </span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +919567024807</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>Industrial drives and control</td>
+                                <td>Rajive Gandhi Institute of technology,Kottayam</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>Electrical and Electronics Engineering</td>
+                                <td>Adishankara institute of engg.&Technology,Kalady</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: 6.5 year</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                </div>
+                <!------------------------------------------------------------------------->
+                <!------Faculty 10--------->
+                <div class="tab-pane fade" id="profile_raji" style=" position: absolute;
+                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%">
+                    <h3>Raji Reghunathan</h3>
+                    <p style=" margin-bottom: 0">Assistant Professor</p>
+                    <p style=" margin-bottom: 0">Department of Electrical and Electronics Engineering</p>
+                    <p style=" margin-bottom: 0">Date of Joining: 04/02/2014</p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-envelope">   rajireghunathan@ce-kgr.org</span></p>
+                    <p style=" margin-bottom: 0"><span class="glyphicon glyphicon-phone">    +91</span></p><br/>
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Education</h4>
+                    <!------------->
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Specialisation</th>
+                                <th>College/ University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PhD</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>M.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>B.Tech</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Experience</h4>
+                    <p style=" margin-bottom: 0">Teaching: year</p>
+                    <p style=" margin-bottom: 0">Industry: Nil</p>
+                    <hr>
+                    <!------------->
+                    <h4 style=" margin-bottom: 0; text-decoration: underline">Publications</h4>
+                    <hr>
+                </div>
+<!------------------------------------------------------------------------->
+            </div>            
+        </div>
+    </div>
+    <!------------------------------------------------------------------------->
+    <br>
+   
+    <!-------------------Footer------------------------------------------------>
+    <div class="container" id="top_nav">
+        <div w3-include-html="footer.html"></div> 
+    </div>
+
+<!------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------->
+    <script>
+        includeHTML();
+    </script>
+    <!------------------------------------------------------------------------------->
+<script>
+
+</script>
+<!------------------------------------------------------------------------------->
+</body>
+</html>
+
+
