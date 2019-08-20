@@ -135,9 +135,150 @@ and open the template in the editor.
     </div>
     <!------------------------------------------------------------------------>
     <br>
-    <div class="container">
-    <h2> Page Under Construction </h2>
+    <!------------------------------------------------------------------------>
+    <div class="container" style=" padding-top: 0">
+        
+        <div class="row">
+            <div class=" col-sm-2">
+                <h3 style=" color: aqua; text-align: center; margin-top: 0; margin-bottom: 0 ">Library</h3>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('library1')">Introduction</button>
+                <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('library2')">Collection Statistics</button>
+                <br>
+                <!--<button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss3')">NSS@CEK</button>
+                <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss4')">Program Officers</button>
+            
+            <br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick="displayFunction('nss5')">Activities</button>-->
+            <!--<br>
+                <button type="button" style=" width: 100%" class="btn btn-info" 
+                        onclick= "displayFunction('nss6')">Extra</button>-->
+        </div>
+            
+            <!----------------------------------------------------------------->
+               
+        
+            <div class=" col-sm-10" style=" border-left-style: double; border-left-color: black"> 
+                <!---------------------------------------------------------------->
+                <div id="library1" style="display:block">
+    
+                    <p style=" text-indent: 20pt">The college has a full-fledged automated library with an 
+                        incredible collection of more than 25000 books, 60 journals 
+                        / magazines and EBSCO E-journal consortium. We have a collection 
+                        of 2920 Electronic books from Springer Publisher's Engineering and 
+                        Technology Package. The Central Library is fully automated using
+                        KOHA Integrated Library System. KOHA ILS @ CEK Library provides 
+                        OPAC (Online Public Access Catalogue) and the same is available
+                        throughout our campus wide LAN. We also started the project 
+                        “Dspace @ CEK  to digitize the in house seminar / project 
+                        reports produced and submitted by our students. Our library 
+                        circulation module is working through bar-code based transactions. </p>
+                    
+                </div>
+                <!------------------------------------------------------------->
+                <div id="library2" style="display:none">
+                    <img src="Lib_Statistics.jpg"> 
+                </div>
+                <!------------------------------------------------------------->
+                <div id="library3" style="display:none">
+                    <table>
+                        <tr>
+                            <th>Sl.No.</th>
+                            <th>Particulars</th>
+                            <th>Title</th>
+                            <th>Volume</th>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>1</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>2</td>
+                            <td>TEQIP Books</td>
+                            <td></td>
+                            <td>4797</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>3</td>
+                            <td>Book Bank</td>
+                            <td></td>
+                            <td>1718</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>4</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>5</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>6</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>7</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>8</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        <tr>
+                            <td>9</td>
+                            <td>General Books</td>
+                            <td></td>
+                            <td>13811</td>
+                        </tr>
+                        <!--------------------->
+                        
+                    </table>
+                    
+                </div>
+                <!------------------------------------------------------------->
+                <div id="library4" style="display:none">
+                    
+                </div>
+                <!-------------------------------------------------------------->
+                <div id="library5" style="display:none">
+                    
+                </div>
+                <!-------------------------------------------------------------->
+                <!--<div id="nss6" style="display:none">
+                    <h1>Test</h1>
+                </div>-->
+                <!-------------------------------------------------------------->
+            </div>
+        </div>
     </div>
+    <!------------------------------------------------------------------------->
     <!------------------------------------------------------------------------->
     <br>
    
@@ -152,9 +293,20 @@ and open the template in the editor.
         includeHTML();
     </script>
     <!------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------->
 <script>
-
+ function displayFunction(x){
+     document.getElementById('library1').style.display='none';
+     document.getElementById('library2').style.display='none';
+     document.getElementById('library3').style.display='none';
+     document.getElementById('library4').style.display='none';
+     document.getElementById('library5').style.display='none';
+     
+     document.getElementById(x).style.display='block';
+ }
 </script>
+
+<!------------------------------------------------------------------------------->
 <!------------------------------------------------------------------------------->
 </body>
 </html>
