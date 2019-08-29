@@ -28,6 +28,72 @@ and open the template in the editor.
   }
   
 
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 4px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 
 </style>  
     </head>
@@ -135,8 +201,103 @@ and open the template in the editor.
     </div>
     <!------------------------------------------------------------------------>
     <br>
-    <div class="container">
-    <h2> Page Under Construction </h2>
+    <div class="container" >
+    <div class="tab">
+        <button class="tablinks" onmouseover="openCity(event, 'London')">Academic Committee</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Paris')">Admissions Committee</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Purchase Committee</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Maintenance')">Maintenance Committee</button>
+</div>
+<!-------------------------------------------------------------------->
+<div id="London" class="tabcontent">
+    <br>
+    <table>
+        <tr>
+            <th>Members</th>
+            <th>Functions</th>
+        </tr>
+        <tr>
+            <td>All Hod's including HOD Applied Science<br>
+UG &PG Co-ordinators</td>
+            <td>To plan co-ordinate and monitor academic and co-curricular activities.<br>
+To release academic calendar
+</td>
+        </tr>
+    </table>
+</div>
+<!-------------------------------------------------------------------------->        
+<div id="Paris" class="tabcontent">
+  <br>
+    <table>
+        <tr>
+            <th style=" width: 200px">Convener</th>
+            <th style=" width: 300px">Members</th>
+            <th>Functions</th>
+        </tr>
+        <tr>
+            <td>Dr.Indu P Nair, HOD EEE</td>
+            <td>Dr. B .V Mathew, HOD Civil<br>
+                Suneesh Kurian ,HOD in Applied Science<br>
+                Joby  James, AP in EC<br>
+                Anish A Aziz, AP in IT<br>
+                Saji K Vettathu, Librarian<br>
+Bili K Nair ,Junior Superintendent</td>
+            <td>To initiate step for planning, monitoring and enhancement of 
+                B .Tech and M .Tech admissions.
+</td>
+        </tr>
+    </table> 
+</div>
+<!----------------------------------------------------------------------------->
+<div id="Tokyo" class="tabcontent">
+  <br>
+    <table>
+        <tr>
+            <th style=" width: 200px">Convener</th>
+            <th style=" width: 300px">Members</th>
+            <th>Functions</th>
+        </tr>
+        <tr>
+            <td>Dr. B .V Mathew, HOD Civil</td>
+            <td>All HOD's<br>
+                Suvin Sundar,Administrative Officer<br>
+                Smitha N M<br>
+                </td>
+            <td>To Plan and implement activities related to purchase (requirement
+                analysis, prioritizing identification of vendors, inviting 
+                tenders/quotations, selection of supplier, purchase, stock,
+                monitoring and payments of equipments and materials)<br>
+To Prepare Annual Budget
+</td>
+        </tr>
+    </table> 
+</div>
+<!----------------------------------------------------------------------------->
+<div id="Maintenance" class="tabcontent">
+  <br>
+    <table>
+        <tr>
+            <th style=" width: 200px">Convener</th>
+            <th style=" width: 300px">Members</th>
+            <th>Functions</th>
+        </tr>
+        <tr>
+            <td>Appu P, AP in Civil</td>
+            <td>Haridas M.S, AP in EEE<br>
+                Aneesh K A ,Instructor in EEE<br>
+                Pratheesh  P S ,Trade Instructor<br>
+                Cherian V , T/M Welder<br>
+Shinu Jacob ,T/M in Computer<br>
+                </td>
+            <td>To Plan and monitor activities related to the maintenance of building,
+                equipments, and machines.
+</td>
+        </tr>
+    </table> 
+</div>
+<!------------------------------------------------------------------------------>
+<div class="clearfix"></div>
+
     </div>
     <!------------------------------------------------------------------------->
     <br>
@@ -153,7 +314,19 @@ and open the template in the editor.
     </script>
     <!------------------------------------------------------------------------------->
 <script>
-
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </script>
 <!------------------------------------------------------------------------------->
 </body>
