@@ -28,6 +28,72 @@ and open the template in the editor.
   }
   
 
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 4px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  display: none;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 
 </style>  
     </head>
@@ -135,66 +201,30 @@ and open the template in the editor.
     </div>
     <!------------------------------------------------------------------------>
     <br>
-    <!------------------------------------------------------------------------>
     <div class="container">
-        <div class="row">
-            <div class=" col-sm-4">
-                <ul style=" list-style-type: none">
-                    <li><b>  </b><a data-toggle="tab" href="#" onclick="document.getElementById('ten1').style.display='block';
-                            document.getElementById('ten2').style.display='none';
-                        document.getElementById('ten3').style.display='none';
-                    document.getElementById('ten4').style.display='none'">Parent Teacher Association, College of Engineering Kidangoor Kottayam Invites Quotations from eligible Vendors for the supply and Installation of Window Grills and Doors.
-                                <b>Last Date of receipt of quotation is on 17/09/2019.</b></a></li>
-                            <hr>
-                            <!--------------------------------------------------->
-                    <!--<li><b>23March2019:  </b><a data-toggle="tab" href="#" onclick="document.getElementById('ten1').style.display='block';
-                            document.getElementById('ten2').style.display='none';
-                        document.getElementById('ten3').style.display='none';
-                    document.getElementById('ten4').style.display='none'">Quotations are invited for Environmental Lab under Civil 
-                        Department, College of Engineering Kidangoor.</a></li>
-                            <hr>-->
-                            <!--------------------------------------------------->
-                            <li><b>4Feb2019:  </b><a data-toggle="tab" href="#" onclick="document.getElementById('ten1').style.display='none';
-                            document.getElementById('ten2').style.display='block';
-                        document.getElementById('ten3').style.display='none';
-                    document.getElementById('ten4').style.display='none'">INVITATION FOR TENDERS_ Supply and Installation of Display Boards</a></li>
-                            <hr>
-                            <li><b>4Feb2019:  </b><a data-toggle="tab" href="#Te3">Invitation for Quotations 
-                                    for supply of Goods</a></li>
-                            <hr>
-                            <li><b>28Jan2019:  </b><a data-toggle="tab" href="#Te4">Short Tender Notice</a></li>
-                            <hr>
-                </ul>
-                
-            </div>
-            <div class=" col-sm-8"> 
-                <div id="ten1" style=" display: block">
-                    <object width=" 100%" height="300"  data="TENDERS/Quotation_Supply_Installation_Window_Grills_Doors.pdf"></object>
-                </div>
-                <!----------------------------------------------------->
-                <div id="ten2" style=" display: none">
-                    <object width=" 100%" height="300"  data="Tender.pdf"></object>
-                </div>
-                <!--<div class="tab-pane fade in active" id="Te1" style=" position: absolute;
-                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
-                    <object width=" 100%" height="300"  data="Fee_Structure.pdf"></object>
-                </div>
-                
-                <div class="tab-pane fade" id="Te2" style=" position: absolute;
-                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
-                    <object width=" 100%" height="300" data="Tender3.pdf"></object>
-                </div>
-                
-                <div class="tab-pane fade" id="Te3" style=" position: absolute;
-                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
-                    <object width=" 100%" height="300" data="Tender3.pdf"></object>
-                </div>
-                <div class="tab-pane fade" id="Te4" style=" position: absolute;
-                    border-style: solid; border-width: 1pt; border-radius: 5pt; width: 100%;">
-                    <object width=" 100%" height="300" data="Tender3.pdf"></object>
-                </div>-->
-            </div>
-        </div>
+        <h3><b>Convener:   </b>Dr.Tina P G</h3>
+        <br>
+        <h4><b>Members:     </b></h4><p style=" text-indent: 60px; font-size: 14pt">All HODs,</p>
+            <p style=" text-indent: 60px; font-size: 14pt">UG&PG Coordinators,</p><p style=" text-indent: 60px; font-size: 14pt">Gitty Rose Eugine,
+                AP in CE,</p><p style=" text-indent: 60px; font-size: 14pt">Linda Sebastian,AP in CS</p>
+        <h4><b>Functions:</b></h4>
+        <p style=" text-indent: 60px; font-size: 13pt">
+            To take lead role in the NBA accreditation related activities of the college.</p>
+        <p style=" text-indent: 60px; font-size: 13pt">To plan and implement Outcome based education.</p>
+<p style=" text-indent: 60px;; font-size: 13pt">To plan and maintain all documents,both institutional 
+    and Departmental, for facilitating NBA Accreditation</p>
+
+<p style=" text-indent: 60px; font-size: 13pt">To initiate, implement &monitor ISO related activities.</p>
+<p style=" text-indent: 60px; font-size: 13pt">To assure proper maintenance of all documents</p>
+<p style=" text-indent: 60px; font-size: 13pt">To assure the quality of educational process of the college.</p>
+<p style=" text-indent: 60px; font-size: 13pt">To keep documents of all activities of the college in a common place.</p>
+<p style=" text-indent: 60px; font-size: 13pt">To conduct meetings at proper intervals.</p>
+<p style=" text-indent: 60px; font-size: 13pt">To Prepare Annual Report</p>
+    </div>
+    
+<!------------------------------------------------------------------------------>
+<div class="clearfix"></div>
+
     </div>
     <!------------------------------------------------------------------------->
     <br>
@@ -211,9 +241,23 @@ and open the template in the editor.
     </script>
     <!------------------------------------------------------------------------------->
 <script>
-
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </script>
 <!------------------------------------------------------------------------------->
 </body>
 </html>
+
+
 
