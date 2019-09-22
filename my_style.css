@@ -135,3 +135,51 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/*---------------------------------------------------------------------------*/
+#library {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#library td, #library th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#library tr:nth-child(even){background-color: #f2f2f2;}
+
+#library tr:hover {background-color: #ddd;}
+
+#library th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*---------------------------------------------------------------------------*/
+#office {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#office td, #office th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#office tr:nth-child(even){background-color: #f2f2f2;}
+
+#office tr:hover {background-color: #ddd;}
+
+#office th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
